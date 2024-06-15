@@ -1,5 +1,32 @@
-/* button */
+/* task1 */
 
+.div_div{
+  background-color: rgb(237, 124, 237) ;
+  height: 180px;
+  width: 400px;
+  margin: auto;
+ 
+}
+button{
+  height: 60px;
+  width: 200px;
+  color: aliceblue;
+  background-color: rgb(248, 141, 244);
+  border: none;
+  margin-top: 60px;
+  margin-left: 105px;
+  box-shadow: 2px;
+  border-radius: 10px;
+  box-shadow: -5px -4px 0 0 black, 
+  5px 4px 0 0 black;
+  text-shadow: 2px 5px 2px black;
+}
+button:hover{
+  box-shadow: 5px 4px 0 0 black inset, 
+  -5px -4px 0 0 white;
+  text-shadow: none;
+
+}
 
 /* task2 */ 
 
@@ -9,7 +36,10 @@
   border-radius: 20px;
   overflow: hidden;
   transition: box-shadow 1s, border-radius 1s;
-  margin: auto;
+  margin: 100px auto;
+ transition: none;
+  transition-duration: 1s;
+
 }
 
 .image-1{
@@ -17,11 +47,15 @@
   overflow: hidden;
   border-top-left-radius: 10px;
   border-top-right-radius: 20px;
+  transition: none;
+  transition-duration: 1ms;
  
 }
 .image2{
   margin-top: 50px;
   margin-left: 35px;
+  transition: none;
+  transition-duration: 1s;
 }
 .card-text {
   font-size: 14px;
@@ -30,7 +64,6 @@
   margin-left: 30px;
 
 }
-
   .card:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
     border-radius: 20px; 
@@ -39,12 +72,13 @@
 
 /* task 3 */ 
 
-.flashing-text {
+h1{
   font-size: 140px;
   color: red;
   letter-spacing: 20px;
-  animation: flash 1s infinite; 
+  animation: flash 0.5s infinite; 
   animation-iteration-count: infinite;
+
 }
 
 @keyframes flash {
@@ -92,8 +126,7 @@
     transform: rotate(360deg);
   }
 }
-
-
+/* სპინერის გაჩერება მაუსის მიტანისას ვერ გავარკვიე */ 
 
 /*task 5 */
 
@@ -132,4 +165,28 @@ nav ul li a {
 nav ul li a:hover {
   color: pink; 
   text-shadow: 0 0 10px pink, 0 0 20px pink, 0 0 30px pink, 0 0 40px pink, 0 0 50px pink, 0 0 60px pink, 0 0 70px pink;
+}
+
+/* task6 */ 
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 100px auto;
+  
+}
+
+.div_class {
+  border: 6px solid rgba(0, 0, 0, 0.3); 
+  border-radius: 50%;
+  border-top: 6px solid #1c272d; 
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite; 
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
